@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { ArrowUpRight, ArrowDownRight, Check,
-  ShieldCheck, Braces, Sparkles
+  ShieldCheck, Braces, Sparkles,
+  Code2, Globe2, Layers3
  } from 'lucide-react';
 import Header from './components/Header.jsx';
 import { content } from './data/content.jsx';
 import './App.css';
+
+const iconMap = { globe: Globe2, code: Code2, layers: Layers3 };
 
 function App() {
   const [lang, setLang] = useState('pt');
@@ -36,7 +39,9 @@ function App() {
             <div className="visual-orbit orbit-one" /><div className="visual-orbit orbit-two" />
             <div className="visual-cross cross-a">+</div><div className="visual-cross cross-b">+</div>
             <div className="visual-code-card">
-              <div className="code-card-top"><span className="window-dots"><i /><i /><i /></span><span>solution.ts</span><span className="code-lock"><ShieldCheck size={14} /></span></div>
+              <div className="code-card-top">
+                <span className="window-dots"><i /><i /><i /></span><span>solution.ts</span><span className="code-lock"><ShieldCheck size={14} /></span>
+              </div>
               <div className="code-lines" aria-hidden="true">
                 <p><span className="code-muted">01</span> <span className="code-purple">const</span> <span className="code-blue">idea</span> = {'{'}</p>
                 <p><span className="code-muted">02</span> &nbsp; problem: <span className="code-green">'real'</span>,</p>
@@ -53,6 +58,61 @@ function App() {
             <div className="visual-caption"><span>01 / 05</span><span>IDEAS → IMPACT</span></div>
           </div>
           <a href="#about" className="scroll-cue"><span className="scroll-line" />SCROLL TO EXPLORE</a>
+        </section>
+
+        <section className="about section-wrap section-pad" id="about">
+          <div className="section-kicker"><span>01</span>{text.aboutEyebrow}</div>
+          <div className="about-grid">
+            <h2>{text.aboutTitle}</h2>
+            <div className="about-body">
+              <p>{text.aboutText}</p>
+              <div className="about-note">
+                <span className="note-icon"><Code2 size={17} /></span><span>{text.aboutNote}</span><ArrowUpRight size={17} />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="services section-wrap section-pad" id="services">
+          <div className="section-heading">
+            <div>
+              <div className="section-kicker">
+                <span>02</span>{text.servicesEyebrow}
+              </div>
+              <h2>{text.servicesTitle}</h2>
+            </div>
+            <p>{text.servicesIntro}</p>
+          </div>
+          <div className="service-grid">
+            {text.services.map((service) => {
+              const Icon = iconMap[service.icon];
+              return <article className="service-card" key={service.number}>
+                        <div className="service-card-top">
+                          <span>{service.number}</span><Icon size={22} strokeWidth={1.6} />
+                        </div>
+                        <h3>{service.title}</h3><p>{service.text}</p>
+                        <a href="#contact" aria-label={`${service.title} — contato`} className="card-arrow">
+                          <ArrowUpRight size={19} />
+                        </a>
+                      </article>;
+            })}
+          </div>
+        </section>
+
+        <section className="process-band">
+          <div className="section-wrap section-pad process-inner">
+            <div className="section-kicker"><span>03</span>{text.processEyebrow}</div>
+            <h2>{text.processTitle}</h2>
+            <div className="process-grid">
+              {text.process.map(([number, title, text]) => {
+                return <article className="process-step" key={number}>
+                  <span className="process-number">{number}</span>
+                  <h3>{title}</h3>
+                  <p>{text}</p>
+                </article>
+              })}
+            </div>
+          </div>
         </section>
       </main>
 

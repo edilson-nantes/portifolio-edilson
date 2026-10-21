@@ -20,6 +20,24 @@ export const content = {
     primaryCta: 'Vamos conversar',
     secondaryCta: 'Explorar meu trabalho',
     proof: ['Desenvolvimento full-stack', 'APIs & integrações', 'Visão de produto'],
+    aboutEyebrow: 'UM POUCO SOBRE MIM', aboutTitle: 'Código é parte da solução. Entender o problema é o começo.',
+    aboutText: 'Minha experiência combina desenvolvimento full-stack com colaboração em produtos e projetos de software. Já trabalhei com aplicações web, integrações entre plataformas corporativas, serviços em nuvem e qualidade de código. Gosto de soluções bem estruturadas, sustentáveis e alinhadas ao que as pessoas realmente precisam.',
+    aboutNote: 'Da descoberta do problema à entrega técnica.',
+    servicesEyebrow: 'COMO POSSO AJUDAR',
+    servicesTitle: 'Tecnologia que resolve problemas reais.',
+    servicesIntro: 'Desde uma presença digital profissional até integrações entre sistemas, o trabalho começa com clareza sobre o objetivo.',
+    services: [
+      { icon: 'globe', number: '01', title: 'Sites & landing pages', text: 'Páginas rápidas, responsivas e pensadas para apresentar seu negócio e transformar visitas em contatos.' },
+      { icon: 'code', number: '02', title: 'Aplicações web & APIs', text: 'Interfaces e serviços backend construídos com atenção à manutenção, validação, segurança e desempenho.' },
+      { icon: 'layers', number: '03', title: 'Integrações & automações', text: 'Conexão entre plataformas, APIs e fluxos de trabalho para reduzir tarefas manuais e melhorar processos.' },
+    ],
+    processEyebrow: 'MEU JEITO DE TRABALHAR', processTitle: 'Clareza em cada etapa.',
+    process: [
+      ['01', 'Entender', 'Alinhamos o contexto, as pessoas envolvidas e o resultado esperado.'],
+      ['02', 'Planejar', 'Definimos escopo, prioridades e a solução mais adequada para o momento.'],
+      ['03', 'Construir', 'Desenvolvo de forma incremental, com atenção à qualidade e à comunicação.'],
+      ['04', 'Evoluir', 'Validamos a entrega e identificamos oportunidades para os próximos passos.'],
+    ],
   },
   en: {
     nav: [
@@ -42,5 +60,23 @@ export const content = {
     primaryCta: "Let's talk",
     secondaryCta: 'Explore my work',
     proof: ['Full-stack development', 'APIs & integrations', 'Product mindset'],
+    aboutEyebrow: 'A LITTLE ABOUT ME', aboutTitle: 'Code is part of the solution. Understanding the problem comes first.',
+    aboutText: "My background combines full-stack development with collaboration across software products and projects. I've worked on web applications, enterprise platform integrations, cloud services, and code quality. I value well-structured, maintainable solutions aligned with what people actually need.",
+    aboutNote: 'From problem discovery to technical delivery.',
+    servicesEyebrow: 'HOW I CAN HELP',
+    servicesTitle: 'Technology that solves real problems.',
+    servicesIntro: 'From a professional online presence to system integrations, every project starts with a clear goal.',
+    services: [
+      { icon: 'globe', number: '01', title: 'Websites & landing pages', text: 'Fast, responsive pages designed to present your business and turn visits into conversations.' },
+      { icon: 'code', number: '02', title: 'Web apps & APIs', text: 'Interfaces and backend services built with maintainability, validation, security, and performance in mind.' },
+      { icon: 'layers', number: '03', title: 'Integrations & automation', text: 'Connect platforms, APIs, and workflows to reduce manual tasks and improve processes.' },
+    ],
+    processEyebrow: 'HOW I WORK', processTitle: 'Clarity at every step.',
+    process: [
+      ['01', 'Understand', 'Align on context, stakeholders, and the outcome we want to achieve.'],
+      ['02', 'Plan', 'Define scope, priorities, and the right solution for the current needs.'],
+      ['03', 'Build', 'Deliver incrementally, with attention to quality and communication.'],
+      ['04', 'Improve', 'Validate the result and identify opportunities for what comes next.'],
+    ],
   },
 };
