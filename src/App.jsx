@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { ArrowUpRight, ArrowDownRight, Check,
   ShieldCheck, Braces, Sparkles,
-  Code2, Globe2, Layers3
+  Code2, Globe2, Layers3,
+  Server
  } from 'lucide-react';
 import Header from './components/Header.jsx';
 import { content } from './data/content.jsx';
@@ -76,9 +77,7 @@ function App() {
         <section className="services section-wrap section-pad" id="services">
           <div className="section-heading">
             <div>
-              <div className="section-kicker">
-                <span>02</span>{text.servicesEyebrow}
-              </div>
+              <div className="section-kicker"><span>02</span>{text.servicesEyebrow}</div>
               <h2>{text.servicesTitle}</h2>
             </div>
             <p>{text.servicesIntro}</p>
@@ -112,6 +111,66 @@ function App() {
                 </article>
               })}
             </div>
+          </div>
+        </section>
+
+        <section className="projects section-wrap section-pad" id="projects">
+          <div className="section-heading">
+            <div>
+              <div className="section-kicker"><span>04</span>{text.projectsEyebrow}</div>
+              <h2>{text.projectsTitle}</h2>
+            </div>
+            <p>{text.projectsIntro}</p>
+          </div>
+          <div className="project-grid">
+            {text.projects.map((project, index) => (
+              <article
+                className={`project-card project-${index + 1}`}
+                key={project.title}
+              >
+                <div className="project-art">
+                  <div className="project-art-grid" />
+                  {index === 0 ? (
+                    <div className="art-api">
+                      <span>POST</span>
+                      <b>/api/v1/orders</b>
+                      <i><Check size={14} /> 201 Created</i>
+                    </div>
+                  ) : index === 1 ? (
+                    <div className="art-cloud">
+                      <div className="cloud-node"><Server size={24} /><span>Function</span></div>
+                      <div className="cloud-connector" />
+                      <div className="cloud-node"><Layers3 size={24} /><span>Queue</span></div>
+                      <div className="cloud-connector" />
+                      <div className="cloud-node"><Braces size={24} /><span>Worker</span></div>
+                    </div>
+                  ) : (
+                    <div className="art-browser">
+                      <div className="browser-bar"><i /><i /><i /></div>
+                      <div className="browser-content">
+                        <span />
+                        <b />
+                        <b />
+                        <div><i /><i /><i /></div>
+                      </div>
+                    </div>
+                  )}
+                  <span className="project-index">0{index + 1}</span>
+                </div>
+                <div className="project-info">
+                  <span className="project-type">{project.type}</span>
+                  <h3>{project.title}</h3>
+                  <p>{project.text}</p>
+                  <div className="tag-list">
+                    {project.tags.map(tag => <span key={tag}>{tag}</span>)}
+                  </div>
+                  <div className="project-status">
+                    <span className="status-dot status-muted" />
+                    {project.status}
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </section>
       </main>
