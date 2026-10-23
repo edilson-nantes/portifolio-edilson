@@ -173,6 +173,16 @@ function App() {
             ))}
           </div>
         </section>
+
+        <section className="experience section-wrap section-pad" id="experience">
+          <div className="experience-header"><div className="section-kicker"><span>05</span>{text.experienceEyebrow}</div><h2>{text.experienceTitle}</h2><p>{text.experienceIntro}</p><div className="education-card"><div className="education-icon"><Layers3 size={19} /></div><div><span>{text.educationTitle}</span><strong>{text.education}</strong><small>{text.educationNote}</small></div></div></div>
+          <div className="timeline">{text.jobs.map((job, index) => <article className="timeline-item" key={job.company}><div className="timeline-marker">{index === 0 ? <span /> : null}</div><div className="timeline-content"><span className="timeline-period">{job.period}</span><h3>{job.role}</h3><span className="timeline-company">{job.company}</span><p>{job.text}</p></div></article>)}</div>
+        </section>
+
+        <section className="skills section-wrap section-pad">
+          <div className="section-heading"><div><div className="section-kicker"><span>06</span>{text.skillsEyebrow}</div><h2>{text.skillsTitle}</h2></div><p>{text.skillsIntro}</p></div>
+          <div className="skills-grid">{text.skillGroups.map(([group, ...skills]) => <div className="skill-group" key={group}><h3>{group}</h3><div className="skill-pills">{skills.map(skill => <span key={skill}>{skill}</span>)}</div></div>)}</div>
+        </section>
       </main>
 
       <footer></footer>
