@@ -74,6 +74,11 @@ export const content = {
     contactText: 'Se você precisa tirar um projeto do papel ou quer conversar sobre tecnologia, estou à disposição.',
     emailLabel: 'Enviar um e-mail',
     whatsappLabel: 'Conversar pelo WhatsApp',
+    footer: 'Feito com intenção e código.',
+    backTop: 'Voltar ao topo',
+    menuLabel: 'Abrir menu',
+    closeLabel: 'Fechar menu',
+    languageLabel: 'EN',
   },
   en: {
     nav: [
@@ -150,5 +155,10 @@ export const content = {
     contactText: "If you'd like to bring a project to life or talk about technology, I'd be happy to connect.",
     emailLabel: 'Send an email',
     whatsappLabel: 'Chat on WhatsApp',
+    footer: 'Made with intention and code.',
+    backTop: 'Back to top',
+    menuLabel: 'Open menu',
+    closeLabel: 'Close menu',
+    languageLabel: 'PT',
   },
 };

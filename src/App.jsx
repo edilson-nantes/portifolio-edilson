@@ -245,7 +245,14 @@ function App() {
         </section>
       </main>
 
-      <footer></footer>
+      <footer className="footer section-wrap">
+        <a className="wordmark footer-wordmark" href="#home">
+          <span className="wordmark-mark">en<span>.</span></span>
+          <span className="wordmark-label">EDILSON NANTES</span>
+        </a>
+        <span className="footer-note">© {new Date().getFullYear()} Edilson Nantes. {text.footer}</span>
+        <a href="#home" className="back-top">{text.backTop}<ArrowUpRight size={14} /></a>
+      </footer>
     </div>
   );
 }
