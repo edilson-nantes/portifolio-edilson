@@ -59,7 +59,7 @@ h1 span{color:var(--accent)}
   overflow: hidden
 }
 .section-wrap{
-  width: min(1160px,calc(100% - 64px));
+  width: calc(min(100% - 64px,1920px));
   margin-inline: auto
 }
 .section-pad{
@@ -132,7 +132,7 @@ h1 span{color:var(--accent)}
 ======================================== */
 .header{
   height: 82px;
-  width: min(1320px,calc(100% - 64px));
+  width: min(min(100% - 64px,1920px));
   margin: auto;display: flex;
   align-items: center;
   justify-content: space-between;
@@ -313,6 +313,15 @@ h1 span{color:var(--accent)}
   justify-content:center;
   margin-left:10px;
   background:radial-gradient(ellipse at 50% 50%,rgba(111,101,245,.10),transparent 60%)
+}
+
+.hero-visual-section{
+  position: relative;
+  width: min(100%, 640px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .visual-orbit{
