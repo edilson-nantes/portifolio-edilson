@@ -113,6 +113,19 @@ h1 span{color:var(--accent)}
   background:rgba(255,255,255,.5)
 }
 .button-secondary:hover{border-color:#b9b4fb}
+.button-light{
+  background:#fff;
+  color:#25283a
+}
+.button-light:hover{background:#eae8ff}
+.button-outline-light{
+  border:1px solid #51546b;
+  color:#f3f3fb
+}
+.button-outline-light:hover{
+  border-color:#aaa4f4;
+  background:rgba(255,255,255,.04)
+}
 
 /* ========================================
    Header
@@ -952,6 +965,77 @@ h1 span{color:var(--accent)}
   font-size:9px
 }
 
+/* ========================================
+   Contact
+======================================== */
+.contact-section{
+  position:relative;
+  overflow:hidden;
+  background:#222538;
+  color:white;
+  padding:91px 0 77px
+}
+.contact-inner{
+  position:relative;
+  z-index:1
+}
+.contact-section .section-kicker{color:#a8abc1}
+.contact-section .section-kicker>span{color:#b7b0ff}
+.contact-inner h2{
+  font-size:clamp(34px,4.7vw,57px);
+  line-height:1.18;
+  letter-spacing:-2.4px;
+  max-width:720px;
+  margin-bottom:18px
+}
+.contact-inner>p{
+  font-size:13px;
+  line-height:1.9;
+  color:#b5b8ca;
+  max-width:520px;
+  margin-bottom:27px
+}
+.contact-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap
+}
+.contact-decoration{
+  position:absolute;
+  border:1px solid rgba(177,172,255,.13);
+  border-radius:50%;
+  pointer-events:none
+}
+.decoration-one{
+  width:570px;
+  height:570px;
+  right:-70px;
+  top:-260px
+}
+.decoration-two{
+  width:420px;
+  height:420px;
+  right:5px;
+  top:-185px
+}
+.social-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:23px;
+  margin-top:43px;
+  padding-top:22px;
+  border-top:1px solid #414459
+}
+.social-links a{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  font-size:10px;
+  color:#b6b9cb;
+  transition:color .2s
+}
+.social-links a:hover{color:white}
+.social-links a svg:last-child{color:#aaa4f4}
 
 /* ========================================
    Media Queries
@@ -1189,6 +1273,17 @@ h1 span{color:var(--accent)}
   .skill-group{padding:15px}
   .skill-group h3{font-size:11px}
   .skill-pills span{font-size:9px}
+
+  .contact-section{padding:74px 0 58px}
+  .contact-inner h2{
+    font-size:clamp(34px,8vw,49px);
+    letter-spacing:-1.8px
+  }
+  .contact-inner>p{font-size:12px}
+  .social-links{
+    gap:15px 20px;
+    margin-top:33px
+  }
 }
 
 @media(max-width: 400px){
@@ -1220,4 +1315,15 @@ h1 span{color:var(--accent)}
 
   .skills-grid{grid-template-columns:1fr 1fr}
   .skill-group{padding:12px}
+
+  .social-links{
+    flex-direction:column;
+    gap:13px
+  }
+  
+  .contact-actions{
+    align-items:stretch;
+    flex-direction:column;
+    max-width:300px
+  }
 }

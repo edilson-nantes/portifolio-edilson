@@ -69,6 +69,11 @@ export const content = {
       ['Cloud & dados', 'AWS Lambda', 'SQS', 'S3', 'PostgreSQL', 'MySQL'],
       ['Qualidade & entrega', 'JUnit', 'Mockito', 'Jest', 'Git', 'Docker'],
     ],
+    contactEyebrow: 'VAMOS CONVERSAR?',
+    contactTitle: 'Tem uma ideia, um desafio ou uma oportunidade?',
+    contactText: 'Se você precisa tirar um projeto do papel ou quer conversar sobre tecnologia, estou à disposição.',
+    emailLabel: 'Enviar um e-mail',
+    whatsappLabel: 'Conversar pelo WhatsApp',
   },
   en: {
     nav: [
@@ -140,5 +145,10 @@ export const content = {
       ['Cloud & data', 'AWS Lambda', 'SQS', 'S3', 'PostgreSQL', 'MySQL'],
       ['Quality & delivery', 'JUnit', 'Mockito', 'Jest', 'Git', 'Docker'],
     ],
+    contactEyebrow: "LET'S TALK",
+    contactTitle: 'Have an idea, a challenge, or an opportunity?',
+    contactText: "If you'd like to bring a project to life or talk about technology, I'd be happy to connect.",
+    emailLabel: 'Send an email',
+    whatsappLabel: 'Chat on WhatsApp',
   },
 };
