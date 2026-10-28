@@ -11,7 +11,7 @@ function Header({ text, lang, setLang }) {
 
   return (
     <header className="header">
-      <a className="wordmark" href="#home" aria-label="Edilson Nantes — início" onClick={closeMenu}>
+      <a className="wordmark" href="#home" aria-label="Edilson Nantes, início" onClick={closeMenu}>
         <span className="wordmark-mark">en<span>.</span></span>
         <span className="wordmark-label">EDILSON NANTES</span>
       </a>
@@ -49,7 +49,7 @@ function Header({ text, lang, setLang }) {
         </button>
         <a className="header-cta" href="#contact">
           {text.primaryCta}
-          <ArrowUpRight size={15} />
+          <ArrowUpRight size={15} aria-hidden="true" />
         </a>
         <button
           className="menu-toggle"
