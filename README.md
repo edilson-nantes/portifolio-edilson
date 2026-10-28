@@ -1,16 +1,66 @@
-# React + Vite
+# Portfólio — Edilson Nantes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal de **Edilson Nantes**, desenvolvedor de software. O site apresenta sua experiência, serviços, competências e formas de contato, em português e inglês.
 
-Currently, two official plugins are available:
+## Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Uma página responsiva feita para apresentar a trajetória profissional e facilitar o contato para projetos e oportunidades. O conteúdo é organizado em seções:
 
-## React Compiler
+- Apresentação e perfil profissional
+- Serviços e processo de trabalho
+- Projetos e experiência
+- Formação e tecnologias
+- Contato por e-mail, WhatsApp, LinkedIn e GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O seletor no cabeçalho alterna o idioma entre português e inglês. O site também inclui navegação adaptada a dispositivos móveis e animações que respeitam a preferência do sistema por movimento reduzido.
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript (JSX)
+- CSS
+- Lucide React e React Icons
+
+## Como executar
+
+Você precisa ter Node.js e npm instalados.
+
+```bash
+npm install
+npm run dev
+```
+
+O Vite informa no terminal o endereço local para abrir no navegador.
+
+### Outros comandos
+
+```bash
+npm run lint     # verifica o código com ESLint
+npm run build    # gera a versão de produção em dist/
+npm run preview  # serve localmente a versão gerada
+```
+
+Execute `npm run build` antes de `npm run preview`.
+
+## Estrutura
+
+```text
+src/
+├── assets/           # imagens e recursos visuais
+├── components/       # componentes reutilizáveis, como o cabeçalho
+├── data/
+│   ├── content.jsx   # textos do portfólio em português e inglês
+│   └── contact.js    # e-mail e links de contato
+├── App.jsx           # estrutura principal da página
+├── App.css           # estilos da página
+└── index.css         # estilos globais
+```
+
+## Atualizar conteúdo e contato
+
+- Edite `src/data/content.jsx` para alterar os textos, projetos, experiência ou competências. Mantenha os conteúdos `pt` e `en` alinhados.
+- Edite `src/data/contact.js` para atualizar e-mail, WhatsApp, LinkedIn ou GitHub.
+- A imagem principal está em `src/assets/hero.png`.
+
+Depois das alterações, confira o resultado com `npm run dev` e valide a compilação com `npm run build`.
