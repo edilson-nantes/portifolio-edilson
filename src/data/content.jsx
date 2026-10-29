@@ -45,6 +45,7 @@ export const content = {
     experienceTitle: 'Tecnologia e pessoas, conectadas.',
     experienceIntro: 'Uma visão resumida da minha trajetória. Os detalhes e resultados de cada projeto serão aprofundados nos estudos de caso.',
     jobs: [
+      { period: 'AGO 2025 – SET 2026', role: 'Web Designer e Gestor de Tráfego', company: 'Autônomo', text: 'Desenvolvimento de landing pages e websites para empresas, com foco em usabilidade e estrutura de conteúdo. Criação e gestão de campanhas de marketing no Google Ads e Meta Ads.' },
       { period: 'AGO 2023 – JUL 2024', role: 'Consultor Full-stack Pleno', company: 'Via Consulting', text: 'Desenvolvimento de aplicações para plataformas de atendimento e API Java com Spring Boot, incluindo testes automatizados com JUnit e Mockito.' },
       { period: 'JUL 2022 – JUL 2023', role: 'Desenvolvedor Full-stack Jr.', company: 'VILT Group', text: 'Desenvolvimento de aplicações web com React e AEM e integração de serviços em nuvem usando AWS Lambda, API Gateway e SQS.' },
       { period: 'NOV 2020 – MAI 2022', role: 'Product Owner / Gestão de Projetos', company: 'Luby Software', text: 'Gestão de backlog, requisitos e cerimônias ágeis em equipes de sustentação e evolução de produtos.' },
@@ -114,6 +115,7 @@ export const content = {
     experienceTitle: 'Technology, connected to people.',
     experienceIntro: 'A snapshot of my professional journey. Project details and outcomes will be expanded in future case studies.',
     jobs: [
+      { period: 'AUG 2025 – SEP 2026', role: 'Web Designer and Traffic Manager', company: 'Self-employed', text: 'Landing page and website development for companies, with a focus on usability and content structure. Google Ads and Meta Ads campaign management.' },
       { period: 'AUG 2023 – JUL 2024', role: 'Mid-level Full-stack Consultant', company: 'Via Consulting', text: 'Built applications for customer support platforms and a Java Spring Boot API, including automated tests with JUnit and Mockito.' },
       { period: 'JUL 2022 – JUL 2023', role: 'Junior Full-stack Developer', company: 'VILT Group', text: 'Built web applications with React and AEM and integrated cloud services using AWS Lambda, API Gateway, and SQS.' },
       { period: 'NOV 2020 – MAY 2022', role: 'Product Owner / Project Management', company: 'Luby Software', text: 'Managed backlogs, requirements, and agile ceremonies across product maintenance and feature teams.' },
