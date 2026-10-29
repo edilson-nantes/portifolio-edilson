@@ -30,7 +30,7 @@ function App() {
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0 });
 
     revealElements.forEach((element) => observer.observe(element));
     document.documentElement.classList.add('reveal-ready');
@@ -39,7 +39,7 @@ function App() {
       observer.disconnect();
       document.documentElement.classList.remove('reveal-ready');
     };
-  }, []);
+  }, [lang]);
 
   return (
     <div className="site-shell">
